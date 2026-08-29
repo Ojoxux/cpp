@@ -7,7 +7,7 @@ REPO_ROOT = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 RUSTC = rustc
 RUST_DEPS_DIR = $(REPO_ROOT).rust/target/release/deps
 RUSTFLAGS = --edition 2021 -O -L $(RUST_DEPS_DIR) \
-	--extern proconio --extern itertools --extern num --extern num_integer --extern rand
+	--extern proconio --extern itertools --extern num --extern num_integer --extern rand --extern rustc_hash
 
 # 通常ビルド: make main (main.cppから)
 %: %.cpp
