@@ -13,9 +13,10 @@ acc config default-task-dirname-format {tasklabel}
 ## コンテストやる時の流れ
 
 ```bash
-make new CONTEST=abc454     # コンテスト作成
+make new CONTEST=abc454               # コンテスト作成 (C++)
+make new CONTEST=abc454 LANG=rust     # コンテスト作成 (Rust)
 # コードを書く
-make main                   # コンパイル (main.cpp → main)
+make main                             # コンパイル (main.cpp/main.rs → main)
 make test CONTEST=abc454 PROBLEM=a    # サンプルテスト
 make submit CONTEST=abc454 PROBLEM=a  # 提出
 ```
