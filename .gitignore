@@ -11,6 +11,9 @@ main
 result
 .direnv/
 
+# Rust
+.rust/target/
+
 # Python
 __pycache__/
 *.pyc
