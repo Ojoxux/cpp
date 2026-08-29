@@ -24,6 +24,11 @@ macro_rules! chmax {
         }
     };
 }
+macro_rules! yes_no {
+    ($b:expr) => {
+        println!("{}", if $b { "Yes" } else { "No" });
+    };
+}
 
 fn main() {
     input! {
